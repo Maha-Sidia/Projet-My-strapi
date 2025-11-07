@@ -8,8 +8,8 @@ export default [
         useDefaults: true,
         directives: {
           'connect-src': ["'self'", 'https:'],
-          'img-src': ["'self'", 'data:', 'blob:', 'https://projet-my-blog-3h2uitqj3-maha-sidias-projects.vercel.app/'],
-          'media-src': ["'self'", 'data:', 'blob:', 'https://projet-my-blog.vercel.app'],
+          'img-src': ["'self'", 'data:', 'blob:', 'https://projet-my-blog-ohzo8xspr-maha-sidias-projects.vercel.app'],
+          'media-src': ["'self'", 'data:', 'blob:', 'https://projet-my-blog-ohzo8xspr-maha-sidias-projects.vercel.app'],
           upgradeInsecureRequests: null,
         },
       },
@@ -20,9 +20,11 @@ export default [
     config: {
       enabled: true,
       origin: [
-        'https://projet-my-blog-3h2uitqj3-maha-sidias-projects.vercel.app/', // ton frontend déployé
-        'http://localhost:3000',              // pour développement local
+        'https://projet-my-blog-ohzo8xspr-maha-sidias-projects.vercel.app', // ✅ ton vrai domaine Vercel
+        'http://localhost:3000', // ✅ pour dev local
       ],
+      headers: '*', // 👈 ajoute cette ligne pour tout autoriser
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // 👈 et les méthodes HTTP autorisées
     },
   },
   'strapi::poweredBy',

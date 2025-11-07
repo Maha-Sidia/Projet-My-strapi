@@ -8,7 +8,7 @@ export default [
         useDefaults: true,
         directives: {
           'connect-src': ["'self'", 'https:'],
-          'img-src': ["'self'", 'data:', 'blob:', 'https://projet-my-blog.vercel.app'],
+          'img-src': ["'self'", 'data:', 'blob:', 'https://projet-my-blog-3h2uitqj3-maha-sidias-projects.vercel.app/'],
           'media-src': ["'self'", 'data:', 'blob:', 'https://projet-my-blog.vercel.app'],
           upgradeInsecureRequests: null,
         },
@@ -20,7 +20,7 @@ export default [
     config: {
       enabled: true,
       origin: [
-        'https://projet-my-blog.vercel.app', // ton frontend déployé
+        'https://projet-my-blog-3h2uitqj3-maha-sidias-projects.vercel.app/', // ton frontend déployé
         'http://localhost:3000',              // pour développement local
       ],
     },
